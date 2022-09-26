@@ -1,13 +1,14 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-export function GeneralCard() {
+export const GeneralCard=({children})=> {
   return (
     <View style={styles.generalContainer}>
-      <View style={styles.card}></View>
+      <View style={styles.card}>{children}</View>
     </View>
   );
 }
+// export default <GeneralCard/>
 const styles = StyleSheet.create({
   generalContainer: {
     width: "100%",
